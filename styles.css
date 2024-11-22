@@ -1,0 +1,202 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  background-image: url(./ASSETS/images/closeup-african-food-during-buffet-600nw-2131009016.webp);
+  background-repeat: none;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Ensure spacing between brand and nav-items */
+  width: 100%;
+  padding: 15px 60px;
+}
+.navbar #brand {
+  color: whitesmoke;
+  font-size: large;
+  font-weight: 200;
+  display: flex; /* Ensure it aligns well within the flex container */
+  align-items: center; /* Vertical alignment for the brand */
+}
+
+.navbar #items {
+  /* margin: 0 0 0 45%; */
+  /*  */
+  display: flex; /* Flexbox for the nav items */
+  align-items: center; /* Ensure nav links are vertically centered */
+  margin-left: auto; /* Push nav items to the right */
+}
+.navbar #items a {
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: 50px;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.navbar #items #homeBtn {
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+}
+.navbar.navbar.scrolled #items #homeBtn {
+  border: 1px solid black;
+}
+
+.navbar.scrolled {
+  position: fixed; /* Sticky position */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Optional: dark background when sticky */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+.navbar.scrolled #items a {
+  color: black;
+}
+
+.navbar.scrolled #brand {
+  color: black;
+}
+
+header h1 {
+  padding: 15% 0;
+  color: white;
+  text-align: center;
+  font-size: 100px;
+}
+
+.body #bodyIntro {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: xx-large;
+  color: #344;
+  margin-bottom: 10px;
+}
+
+.bookings {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookings button {
+  background-color: black;
+  color: white;
+  width: 50%;
+  height: 100px;
+  font-size: larger;
+}
+
+.bookings #location {
+  color: red;
+}
+
+.mapContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .bookings #map {
+
+} */
+
+.bookings #contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #344;
+}
+
+section.workingHrs {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.workingHrs #hours {
+  text-align: center;
+}
+
+#hours #bl {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-color: black;
+  margin-bottom: 25px;
+}
+
+#hours #days {
+  color: red;
+}
+
+#hours #tFrame {
+  color: rgb(141, 19, 11);
+}
+
+section.contactUs {
+  margin-top: 25px;
+}
+
+.contactUs #intro {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0 7% 0;
+}
+
+.contactUs #intro h3 {
+  font-size: xx-large;
+}
+
+.contactUs span {
+  color: red; 
+}
+
+.contactUs #indicator {
+  font-size: 14px;
+}
+
+.contactUs form {
+  padding-left: 100px;
+}
+
+/* FOOTER SECTION */
+
+section#footer {
+  margin-top: 15%;
+  margin-bottom: 0%;
+  height: 500px;
+  /* background-color: #f2f2f2; */
+  background-color: red;
+}
+
+footer {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+}
+
+#outrologo {
+  padding-left: 45%;
+}
